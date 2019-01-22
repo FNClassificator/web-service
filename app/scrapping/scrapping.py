@@ -131,6 +131,8 @@ def make_request(url, attr):
         # URL
         result['url'] = url
         return result
+    else: 
+        print('Error or URL request')
 
 def get_variable(var):
     switcher = {

@@ -9,10 +9,10 @@ def tokenize_document(content):
     
     all_text = []
 
-    all_text += clean_text_by_word(content['titke'], True)
+    all_text += clean_text_by_word(content['title'], True)
     all_text += clean_text_by_word(content['subtitle'], True)
     for p in content['text']:
-        all_text += clean_text_by_word(content['titke'], True)
+        all_text += clean_text_by_word(p, True)
     return all_text
 
 
